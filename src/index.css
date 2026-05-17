@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+@import 'aos/dist/aos.css';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Space Grotesk', var(--font-sans);
+  --color-ink: #05060a;
+  --color-accent: #7c5cff;
+  --color-accent-2: #2dd4bf;
+}
+
+@layer base {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    @apply bg-[#030408] text-white antialiased overflow-x-hidden;
+    font-family: var(--font-sans);
+  }
+
+  body.custom-cursor {
+    cursor: none;
+  }
+
+  body.custom-cursor a,
+  body.custom-cursor button {
+    cursor: none;
+  }
+
+  ::selection {
+    background: rgba(124, 92, 255, 0.35);
+    color: white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0a0b12;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #7c5cff, #2dd4bf);
+    border-radius: 999px;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply border border-white/10 bg-white/[0.04] backdrop-blur-xl;
+  }
+
+  .glass-strong {
+    @apply border border-white/15 bg-white/[0.07] backdrop-blur-2xl;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-violet-300 via-white to-cyan-300 bg-clip-text text-transparent;
+  }
+
+  .aurora-bg {
+    background:
+      radial-gradient(ellipse 80% 50% at 20% -10%, rgba(124, 92, 255, 0.22), transparent 55%),
+      radial-gradient(ellipse 60% 40% at 80% 0%, rgba(45, 212, 191, 0.14), transparent 50%),
+      radial-gradient(ellipse 50% 30% at 50% 100%, rgba(124, 92, 255, 0.08), transparent 60%);
+  }
+
+  .section-padding {
+    @apply px-5 py-24 md:px-8 lg:px-12 xl:px-16;
+  }
+
+  .container-wide {
+    @apply mx-auto w-full max-w-7xl;
+  }
+}

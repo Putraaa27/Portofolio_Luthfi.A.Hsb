@@ -1,0 +1,488 @@
+{
+  "profile": {
+    "displayName": "Luthfi.A.Hasibuan",
+    "fullName": "Luthfi Akhyar Hasibuan",
+    "roles": [
+      "Data Scientist",
+      "Machine Learning Engineer",
+      "Prompt Engineer",
+      "Fullstack Developer"
+    ],
+    "headline": "Luthfi Akhyar Hasibuan",
+    "tagline": "Building intelligent AI systems, machine learning solutions, and modern interactive web experiences.",
+    "bio": "I am an AI Engineer, Machine Learning Engineer, and Data Scientist focused on building intelligent systems that combine research-driven development with modern software engineering. My work spans healthcare AI, deep learning, environmental intelligence, and interactive web technologies—transforming complex data into impactful and user-centered digital solutions.\n\nI specialize in developing end-to-end machine learning pipelines, AI-powered applications, and modern frontend experiences using Python, TensorFlow, React, and TypeScript. With a strong analytical mindset and passion for innovation, I aim to create technology that is not only technically robust, but also visually refined, intuitive, and meaningful for real-world use.",
+    "email": "luthfiakhyarhsb27@gmail.com",
+    "whatsapp": "62882015572948",
+    "location": "Indonesia",
+    "photoUrl": "/assets/profile/photo.jpeg",
+    "cvUrl": "/assets/profile/cv.pdf",
+    "focusAreas": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Deep Learning",
+      "Data Analytics",
+      "Fullstack Web Development",
+      "Interactive Systems"
+    ]
+  },
+  "skillCategories": [
+    {
+      "id": "ai-ml",
+      "label": "AI / Machine Learning",
+      "icon": "brain",
+      "skills": [
+        "TensorFlow",
+        "PyTorch",
+        "Scikit-Learn",
+        "OpenCV",
+        "CNN",
+        "Deep Learning",
+        "Computer Vision",
+        "NLP",
+        "Prompt Engineering",
+        "Pandas",
+        "NumPy",
+        "Keras"
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "Frontend",
+      "icon": "layout",
+      "skills": [
+        "React",
+        "Next.js",
+        "Vite",
+        "TailwindCSS",
+        "GSAP",
+        "Framer Motion",
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "Backend",
+      "icon": "server",
+      "skills": [
+        "FastAPI",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Firebase",
+        "Supabase",
+        "REST API"
+      ]
+    },
+    {
+      "id": "data",
+      "label": "Data & Analytics",
+      "icon": "chart",
+      "skills": [
+        "Power BI",
+        "Looker Studio",
+        "SQL",
+        "R",
+        "RPubs",
+        "Excel",
+        "Statistics",
+        "Data Visualization"
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "Tools & Platforms",
+      "icon": "wrench",
+      "skills": [
+        "Git",
+        "GitHub",
+        "Vercel",
+        "Figma",
+        "VS Code",
+        "Kaggle",
+        "Linux",
+        "Postman"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "AI Engineer & Data Scientist",
+      "org": "Independent / Academic Projects",
+      "period": "2024 — Present",
+      "description": "Designing end-to-end ML pipelines, healthcare AI models, environmental intelligence systems, and premium fullstack interfaces."
+    },
+    {
+      "role": "Machine Learning Engineer",
+      "org": "Healthcare & Agricultural AI",
+      "period": "2024 — Present",
+      "description": "Developing cancer detection, obesity prediction, and cocoa disease classification systems with rigorous evaluation workflows."
+    },
+    {
+      "role": "Fullstack Developer",
+      "org": "Web Platforms & AI Applications",
+      "period": "2024 — Present",
+      "description": "Shipping production-ready platforms including EcoShort AI, Smart School, ITSB Nexus, and AI-powered web applications."
+    }
+  ],
+  "projects": [
+    {
+      "id": "machine-learning-medic-kesehatan-newkanker-ipynb",
+      "title": "Cancer Detection ML",
+      "description": "Machine learning models for cancer detection and clinical risk analysis using structured healthcare datasets.",
+      "category": "Machine Learning & Healthcare AI",
+      "theme": "Clinical Diagnostics",
+      "techStack": [
+        "Python",
+        "Scikit-learn",
+        "Pandas",
+        "Healthcare ML"
+      ],
+      "gallery": [],
+      "folderPath": "Machine_Learning\\Medic (kesehatan)",
+      "files": [
+        {
+          "name": "NewKanker.ipynb",
+          "type": "notebook",
+          "url": "/assets/projects/machine-learning-medic-kesehatan-newkanker-ipynb/NewKanker.ipynb"
+        },
+        {
+          "name": "Obesitas.ipynb",
+          "type": "notebook",
+          "url": "/assets/projects/machine-learning-medic-kesehatan-newkanker-ipynb/Obesitas.ipynb"
+        }
+      ],
+      "highlights": [
+        "Medical data modeling",
+        "Predictive diagnostics",
+        "Healthcare AI"
+      ]
+    },
+    {
+      "id": "deep-learning-projek-cocoa",
+      "title": "Cocoa Leaf Disease Detection",
+      "description": "Deep learning system for classifying cocoa leaf diseases using convolutional neural networks and computer vision pipelines.",
+      "category": "Deep Learning",
+      "theme": "Agricultural Computer Vision",
+      "techStack": [
+        "Python",
+        "TensorFlow",
+        "CNN",
+        "Computer Vision",
+        "Jupyter"
+      ],
+      "gallery": [],
+      "previewPdf": "/assets/projects/deep-learning-projek-cocoa/pdf_coco.pdf",
+      "folderPath": "deep_learning\\Projek_cocoa",
+      "files": [
+        {
+          "name": "coco.ipynb",
+          "type": "notebook",
+          "url": "/assets/projects/deep-learning-projek-cocoa/coco.ipynb"
+        },
+        {
+          "name": "pdf_coco.pdf",
+          "type": "pdf",
+          "url": "/assets/projects/deep-learning-projek-cocoa/pdf_coco.pdf"
+        }
+      ],
+      "highlights": [
+        "Image classification",
+        "Agricultural AI",
+        "CNN architecture"
+      ]
+    },
+    {
+      "id": "data-analys",
+      "title": "Data Analytics Portfolio",
+      "description": "Comprehensive data analytics profile featuring exploratory analysis, visualization, and published R Markdown insights on RPubs.",
+      "category": "Data Analytics & Visualization",
+      "theme": "R & Statistical Visualization",
+      "techStack": [
+        "R",
+        "R Markdown",
+        "ggplot2",
+        "RPubs",
+        "Statistics"
+      ],
+      "gallery": [],
+      "previewPdf": "/assets/projects/data-analys/Profil_projekR_luthfi.pdf",
+      "folderPath": "Data_analys",
+      "files": [
+        {
+          "name": "Link Rpubs_Luthfi.A.Hasibuan.docx",
+          "type": "other",
+          "url": "/assets/projects/data-analys/Link Rpubs_Luthfi.A.Hasibuan.docx"
+        },
+        {
+          "name": "Profil_projekR_luthfi.pdf",
+          "type": "pdf",
+          "url": "/assets/projects/data-analys/Profil_projekR_luthfi.pdf"
+        }
+      ],
+      "highlights": [
+        "Published analytics profile",
+        "Data storytelling",
+        "RPubs integration"
+      ]
+    },
+    {
+      "id": "web-def-ecoshort-ai-scan-sampah-main",
+      "title": "EcoShort AI",
+      "description": "Environmental intelligence platform for AI-powered waste detection, classification, and smart recycling guidance.",
+      "category": "AI Environmental System",
+      "theme": "Waste Detection & Smart Recycling",
+      "techStack": [
+        "React",
+        "AI Vision",
+        "Vercel",
+        "TypeScript"
+      ],
+      "thumbnail": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/tampilan depan.jpeg",
+      "heroImage": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/tampilan depan.jpeg",
+      "gallery": [
+        "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/tampilan depan.jpeg"
+      ],
+      "previewPdf": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/EcoShort Ai.pdf",
+      "folderPath": "Web_def\\EcoShort Ai\\scan-sampah-main",
+      "files": [
+        {
+          "name": "EcoShort Ai.pdf",
+          "type": "pdf",
+          "url": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/EcoShort Ai.pdf"
+        },
+        {
+          "name": "tampilan depan.jpeg",
+          "type": "image",
+          "url": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/tampilan depan.jpeg"
+        }
+      ],
+      "highlights": [
+        "Waste classification",
+        "Smart recycling",
+        "Live deployment"
+      ],
+      "liveUrl": "https://ecoshort-ai.vercel.app/"
+    },
+    {
+      "id": "web-def-itsb-nexus-main",
+      "title": "ITSB Nexus",
+      "description": "Modern web platform engineered for institutional workflows, content management, and scalable frontend architecture.",
+      "category": "Web Development Platform",
+      "theme": "Institutional Digital Platform",
+      "techStack": [
+        "React",
+        "TypeScript",
+        "REST API",
+        "TailwindCSS"
+      ],
+      "thumbnail": "/assets/projects/web-def-itsb-nexus-main/tampilan depan.png",
+      "heroImage": "/assets/projects/web-def-itsb-nexus-main/tampilan depan.png",
+      "gallery": [
+        "/assets/projects/web-def-itsb-nexus-main/tampilan depan.png"
+      ],
+      "previewPdf": "/assets/projects/web-def-itsb-nexus-main/itsb-nexus-main.pdf",
+      "folderPath": "Web_def\\itsb-nexus-main",
+      "files": [
+        {
+          "name": "itsb-nexus-main.pdf",
+          "type": "pdf",
+          "url": "/assets/projects/web-def-itsb-nexus-main/itsb-nexus-main.pdf"
+        },
+        {
+          "name": "tampilan depan.png",
+          "type": "image",
+          "url": "/assets/projects/web-def-itsb-nexus-main/tampilan depan.png"
+        }
+      ],
+      "highlights": [
+        "Platform architecture",
+        "Scalable UI",
+        "Institutional systems"
+      ]
+    },
+    {
+      "id": "machine-learning-medic-kesehatan-obesitas-ipynb",
+      "title": "Obesity Prediction Platform",
+      "description": "Predictive modeling and web presentation for obesity risk assessment using lifestyle and biometric features.",
+      "category": "Machine Learning & Healthcare AI",
+      "theme": "Lifestyle Risk Analytics",
+      "techStack": [
+        "Python",
+        "Scikit-learn",
+        "React",
+        "Healthcare ML"
+      ],
+      "gallery": [],
+      "folderPath": "Machine_Learning\\Medic (kesehatan)",
+      "files": [
+        {
+          "name": "NewKanker.ipynb",
+          "type": "notebook",
+          "url": "/assets/projects/machine-learning-medic-kesehatan-obesitas-ipynb/NewKanker.ipynb"
+        },
+        {
+          "name": "Obesitas.ipynb",
+          "type": "notebook",
+          "url": "/assets/projects/machine-learning-medic-kesehatan-obesitas-ipynb/Obesitas.ipynb"
+        }
+      ],
+      "highlights": [
+        "Risk prediction",
+        "Interactive presentation",
+        "Clinical insights"
+      ]
+    },
+    {
+      "id": "web-def-obesitas",
+      "title": "Obesity Prediction Platform",
+      "description": "Predictive modeling and web presentation for obesity risk assessment using lifestyle and biometric features.",
+      "category": "Machine Learning & Healthcare AI",
+      "theme": "Lifestyle Risk Analytics",
+      "techStack": [
+        "Python",
+        "Scikit-learn",
+        "React",
+        "Healthcare ML"
+      ],
+      "thumbnail": "/assets/projects/web-def-obesitas/tampilan depan.png",
+      "heroImage": "/assets/projects/web-def-obesitas/tampilan depan.png",
+      "gallery": [
+        "/assets/projects/web-def-obesitas/tampilan depan.png"
+      ],
+      "previewPdf": "/assets/projects/web-def-obesitas/Obesitas.pdf",
+      "folderPath": "Web_def\\Obesitas",
+      "files": [
+        {
+          "name": "Obesitas.pdf",
+          "type": "pdf",
+          "url": "/assets/projects/web-def-obesitas/Obesitas.pdf"
+        },
+        {
+          "name": "tampilan depan.png",
+          "type": "image",
+          "url": "/assets/projects/web-def-obesitas/tampilan depan.png"
+        }
+      ],
+      "highlights": [
+        "Risk prediction",
+        "Interactive presentation",
+        "Clinical insights"
+      ]
+    },
+    {
+      "id": "web-def-smart-school-dist",
+      "title": "Smart School",
+      "description": "Educational management platform connecting students, academics, and administration through a refined digital experience.",
+      "category": "Educational Platform",
+      "theme": "School Management System",
+      "techStack": [
+        "React",
+        "TypeScript",
+        "Vercel"
+      ],
+      "thumbnail": "/assets/projects/web-def-smart-school-dist/tampilan depan.png",
+      "heroImage": "/assets/projects/web-def-smart-school-dist/tampilan depan.png",
+      "gallery": [
+        "/assets/projects/web-def-smart-school-dist/tampilan depan.png"
+      ],
+      "previewPdf": "/assets/projects/web-def-smart-school-dist/smart-school-dist.pdf",
+      "folderPath": "Web_def\\smart-school-dist",
+      "files": [
+        {
+          "name": "smart-school-dist.pdf",
+          "type": "pdf",
+          "url": "/assets/projects/web-def-smart-school-dist/smart-school-dist.pdf"
+        },
+        {
+          "name": "tampilan depan.png",
+          "type": "image",
+          "url": "/assets/projects/web-def-smart-school-dist/tampilan depan.png"
+        }
+      ],
+      "highlights": [
+        "School management",
+        "Modern UX",
+        "Live deployment"
+      ],
+      "liveUrl": "https://smart-school-060851.vercel.app/"
+    },
+    {
+      "id": "web-def-smart-school-hub-main",
+      "title": "Smart School Hub",
+      "description": "Centralized educational hub platform designed for streamlined academic operations and modern school administration.",
+      "category": "Educational Platform",
+      "theme": "Integrated School Hub",
+      "techStack": [
+        "React",
+        "TypeScript",
+        "Fullstack"
+      ],
+      "thumbnail": "/assets/projects/web-def-smart-school-hub-main/tampilan depan.png",
+      "heroImage": "/assets/projects/web-def-smart-school-hub-main/tampilan depan.png",
+      "gallery": [
+        "/assets/projects/web-def-smart-school-hub-main/tampilan depan.png"
+      ],
+      "previewPdf": "/assets/projects/web-def-smart-school-hub-main/smart-school.pdf",
+      "folderPath": "Web_def\\smart-school-hub-main",
+      "files": [
+        {
+          "name": "smart-school.pdf",
+          "type": "pdf",
+          "url": "/assets/projects/web-def-smart-school-hub-main/smart-school.pdf"
+        },
+        {
+          "name": "tampilan depan.png",
+          "type": "image",
+          "url": "/assets/projects/web-def-smart-school-hub-main/tampilan depan.png"
+        }
+      ],
+      "highlights": [
+        "Hub architecture",
+        "Academic workflows",
+        "Premium interface"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "id": "esertifikat-1-1-pdf",
+      "title": "Esertifikat 1 (1)",
+      "url": "/assets/certificates/esertifikat-1-1-pdf.pdf",
+      "category": "Data Science"
+    },
+    {
+      "id": "luthfi-akhyar-hasibuan-sertif-kaggle-1-pdf",
+      "title": "Luthfi Akhyar Hasibuan   Sertif Kaggle (1)",
+      "url": "/assets/certificates/luthfi-akhyar-hasibuan-sertif-kaggle-1-pdf.pdf",
+      "category": "Kaggle"
+    },
+    {
+      "id": "luthfi-akhyar-hasibuan-pdf",
+      "title": "Luthfi Akhyar Hasibuan",
+      "url": "/assets/certificates/luthfi-akhyar-hasibuan-pdf.pdf",
+      "category": "Data Science"
+    },
+    {
+      "id": "webinar-elevaite-y26-10-april-2026-webinar-certificate-12711827506002-pdf",
+      "title": "[Webinar ElevAIte Y26]   10 April 2026 Webinar Certificate 12711827506002",
+      "url": "/assets/certificates/webinar-elevaite-y26-10-april-2026-webinar-certificate-12711827506002-pdf.pdf",
+      "category": "Microsoft ElevAIte AI"
+    },
+    {
+      "id": "webinar-elevaite-y26-28-april-2026-certificate-1271182705060002-pdf",
+      "title": "[Webinar ElevAIte Y26]   28 April 2026 Certificate 1271182705060002",
+      "url": "/assets/certificates/webinar-elevaite-y26-28-april-2026-certificate-1271182705060002-pdf.pdf",
+      "category": "Microsoft ElevAIte AI"
+    },
+    {
+      "id": "webinar-elevaite-y26-28-april-2026-certificate-luthfi-a-hasibuan-pdf",
+      "title": "[Webinar ElevAIte Y26]   28 April 2026 Certificate Luthfi.A.Hasibuan",
+      "url": "/assets/certificates/webinar-elevaite-y26-28-april-2026-certificate-luthfi-a-hasibuan-pdf.pdf",
+      "category": "Microsoft ElevAIte AI"
+    }
+  ],
+  "scannedAt": "2026-05-17T04:00:10.942Z"
+}
