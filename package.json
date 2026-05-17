@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "scan": "node --experimental-strip-types scripts/scanPortfolio.ts",
+    "prepare-deploy": "npm run scan",
     "dev": "node ./node_modules/vite/bin/vite.js",
     "build": "npm run scan && node ./node_modules/typescript/lib/tsc.js -b && node ./node_modules/vite/bin/vite.js build",
     "lint": "eslint .",

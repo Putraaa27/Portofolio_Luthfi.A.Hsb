@@ -1,0 +1,7 @@
+# Salin folder berikut ke sini agar Vercel bisa scan saat build (opsional):
+# - my_Projeckt
+# - Sertifikat
+# - CV Luthfi.A.Hasibuan.pdf
+# - Pas foto.jpeg
+#
+# Atau commit hasil scan: public/assets + src/data/portfolio.generated.json

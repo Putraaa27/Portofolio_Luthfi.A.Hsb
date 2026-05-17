@@ -11,11 +11,44 @@ import type {
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const WEB_ROOT = path.resolve(__dirname, '..')
-const PORTFOLIO_ROOT = path.resolve(WEB_ROOT, '..')
-const PROJECTS_DIR = path.join(PORTFOLIO_ROOT, 'my_Projeckt')
-const CERTS_DIR = path.join(PORTFOLIO_ROOT, 'Sertifikat')
 const PUBLIC_ASSETS = path.join(WEB_ROOT, 'public', 'assets')
 const OUTPUT_JSON = path.join(WEB_ROOT, 'src', 'data', 'portfolio.generated.json')
+
+/** Set during scan — parent folder containing my_Projeckt + Sertifikat */
+let PORTFOLIO_ROOT = path.resolve(WEB_ROOT, '..')
+let PROJECTS_DIR = path.join(PORTFOLIO_ROOT, 'my_Projeckt')
+let CERTS_DIR = path.join(PORTFOLIO_ROOT, 'Sertifikat')
+
+function resolveDataRoots(): { portfolioRoot: string; projectsDir: string; certsDir: string } | null {
+  const candidates = [
+    process.env.PORTFOLIO_DATA_ROOT?.trim(),
+    path.join(WEB_ROOT, 'portfolio-data'),
+    path.resolve(WEB_ROOT, '..'),
+  ].filter((p): p is string => Boolean(p))
+
+  for (const root of candidates) {
+    const projectsDir = path.join(root, 'my_Projeckt')
+    const certsDir = path.join(root, 'Sertifikat')
+    if (fs.existsSync(projectsDir) || fs.existsSync(certsDir)) {
+      return { portfolioRoot: root, projectsDir, certsDir }
+    }
+  }
+  return null
+}
+
+function loadExistingData(): PortfolioData | null {
+  if (!fs.existsSync(OUTPUT_JSON)) return null
+  try {
+    return JSON.parse(fs.readFileSync(OUTPUT_JSON, 'utf-8')) as PortfolioData
+  } catch {
+    return null
+  }
+}
+
+/** Safe path segments for Vercel/static hosting (no spaces in URLs) */
+function sanitizePathSegment(segment: string) {
+  return segment.replace(/\s+/g, '-')
+}
 
 const IMAGE_EXT = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif', '.svg'])
 const SKIP_DIRS = new Set(['node_modules', '.git', 'dist', 'build', '.vite', '__pycache__', 'src'])
@@ -260,7 +293,8 @@ function collectAssets(dir: string, projectSlug: string, base = dir): CollectedA
 
     const ext = path.extname(entry.name).toLowerCase()
     const rel = path.relative(base, full)
-    const dest = path.join(PUBLIC_ASSETS, 'projects', projectSlug, rel)
+    const safeRel = rel.split(path.sep).map(sanitizePathSegment).join(path.sep)
+    const dest = path.join(PUBLIC_ASSETS, 'projects', projectSlug, safeRel)
     copyFile(full, dest)
     const url = assetUrl(path.relative(PUBLIC_ASSETS, dest))
 
@@ -417,10 +451,46 @@ function copyProfileAssets() {
 
 export default function scanPortfolio() {
   fs.mkdirSync(PUBLIC_ASSETS, { recursive: true })
+  const existing = loadExistingData()
+  const roots = resolveDataRoots()
+
+  if (!roots) {
+    console.warn(
+      '⚠ Folder my_Projeckt / Sertifikat tidak ditemukan (normal di Vercel jika hanya repo portfolio-web).',
+    )
+    console.warn('  → Memakai data portfolio yang sudah di-commit (portfolio.generated.json + public/assets).')
+    if (existing?.projects?.length) {
+      console.log(
+        `✓ Deploy-safe: ${existing.projects.length} projects, ${existing.certificates?.length ?? 0} certificates`,
+      )
+      return
+    }
+    console.error(
+      '✗ Tidak ada data portfolio. Jalankan "npm run scan" di lokal, lalu commit public/assets dan portfolio.generated.json',
+    )
+    process.exitCode = 1
+    return
+  }
+
+  PORTFOLIO_ROOT = roots.portfolioRoot
+  PROJECTS_DIR = roots.projectsDir
+  CERTS_DIR = roots.certsDir
+  console.log(`→ Scanning portfolio data from: ${PORTFOLIO_ROOT}`)
+
   copyProfileAssets()
 
-  const projects = discoverProjects()
-  const certificates = scanCertificates()
+  let projects = discoverProjects()
+  let certificates = scanCertificates()
+
+  if (projects.length === 0 && existing?.projects?.length) {
+    console.warn('⚠ Scan projects kosong — mempertahankan projects dari file yang ada.')
+    projects = existing.projects
+  }
+  if (certificates.length === 0 && existing?.certificates?.length) {
+    console.warn('⚠ Scan certificates kosong — mempertahankan certificates dari file yang ada.')
+    certificates = existing.certificates
+  }
+
   const profileDir = path.join(PUBLIC_ASSETS, 'profile')
   const photoFile = fs.existsSync(profileDir)
     ? fs.readdirSync(profileDir).find((f) => f.startsWith('photo'))
