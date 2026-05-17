@@ -214,7 +214,7 @@
         {
           "name": "Link Rpubs_Luthfi.A.Hasibuan.docx",
           "type": "other",
-          "url": "/assets/projects/data-analys/Link Rpubs_Luthfi.A.Hasibuan.docx"
+          "url": "/assets/projects/data-analys/Link-Rpubs_Luthfi.A.Hasibuan.docx"
         },
         {
           "name": "Profil_projekR_luthfi.pdf",
@@ -240,23 +240,23 @@
         "Vercel",
         "TypeScript"
       ],
-      "thumbnail": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/tampilan depan.jpeg",
-      "heroImage": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/tampilan depan.jpeg",
+      "thumbnail": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/tampilan-depan.jpeg",
+      "heroImage": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/tampilan-depan.jpeg",
       "gallery": [
-        "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/tampilan depan.jpeg"
+        "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/tampilan-depan.jpeg"
       ],
-      "previewPdf": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/EcoShort Ai.pdf",
+      "previewPdf": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/EcoShort-Ai.pdf",
       "folderPath": "Web_def\\EcoShort Ai\\scan-sampah-main",
       "files": [
         {
           "name": "EcoShort Ai.pdf",
           "type": "pdf",
-          "url": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/EcoShort Ai.pdf"
+          "url": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/EcoShort-Ai.pdf"
         },
         {
           "name": "tampilan depan.jpeg",
           "type": "image",
-          "url": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/tampilan depan.jpeg"
+          "url": "/assets/projects/web-def-ecoshort-ai-scan-sampah-main/tampilan-depan.jpeg"
         }
       ],
       "highlights": [
@@ -278,10 +278,10 @@
         "REST API",
         "TailwindCSS"
       ],
-      "thumbnail": "/assets/projects/web-def-itsb-nexus-main/tampilan depan.png",
-      "heroImage": "/assets/projects/web-def-itsb-nexus-main/tampilan depan.png",
+      "thumbnail": "/assets/projects/web-def-itsb-nexus-main/tampilan-depan.png",
+      "heroImage": "/assets/projects/web-def-itsb-nexus-main/tampilan-depan.png",
       "gallery": [
-        "/assets/projects/web-def-itsb-nexus-main/tampilan depan.png"
+        "/assets/projects/web-def-itsb-nexus-main/tampilan-depan.png"
       ],
       "previewPdf": "/assets/projects/web-def-itsb-nexus-main/itsb-nexus-main.pdf",
       "folderPath": "Web_def\\itsb-nexus-main",
@@ -294,7 +294,7 @@
         {
           "name": "tampilan depan.png",
           "type": "image",
-          "url": "/assets/projects/web-def-itsb-nexus-main/tampilan depan.png"
+          "url": "/assets/projects/web-def-itsb-nexus-main/tampilan-depan.png"
         }
       ],
       "highlights": [
@@ -347,10 +347,10 @@
         "React",
         "Healthcare ML"
       ],
-      "thumbnail": "/assets/projects/web-def-obesitas/tampilan depan.png",
-      "heroImage": "/assets/projects/web-def-obesitas/tampilan depan.png",
+      "thumbnail": "/assets/projects/web-def-obesitas/tampilan-depan.png",
+      "heroImage": "/assets/projects/web-def-obesitas/tampilan-depan.png",
       "gallery": [
-        "/assets/projects/web-def-obesitas/tampilan depan.png"
+        "/assets/projects/web-def-obesitas/tampilan-depan.png"
       ],
       "previewPdf": "/assets/projects/web-def-obesitas/Obesitas.pdf",
       "folderPath": "Web_def\\Obesitas",
@@ -363,7 +363,7 @@
         {
           "name": "tampilan depan.png",
           "type": "image",
-          "url": "/assets/projects/web-def-obesitas/tampilan depan.png"
+          "url": "/assets/projects/web-def-obesitas/tampilan-depan.png"
         }
       ],
       "highlights": [
@@ -383,10 +383,10 @@
         "TypeScript",
         "Vercel"
       ],
-      "thumbnail": "/assets/projects/web-def-smart-school-dist/tampilan depan.png",
-      "heroImage": "/assets/projects/web-def-smart-school-dist/tampilan depan.png",
+      "thumbnail": "/assets/projects/web-def-smart-school-dist/tampilan-depan.png",
+      "heroImage": "/assets/projects/web-def-smart-school-dist/tampilan-depan.png",
       "gallery": [
-        "/assets/projects/web-def-smart-school-dist/tampilan depan.png"
+        "/assets/projects/web-def-smart-school-dist/tampilan-depan.png"
       ],
       "previewPdf": "/assets/projects/web-def-smart-school-dist/smart-school-dist.pdf",
       "folderPath": "Web_def\\smart-school-dist",
@@ -399,7 +399,7 @@
         {
           "name": "tampilan depan.png",
           "type": "image",
-          "url": "/assets/projects/web-def-smart-school-dist/tampilan depan.png"
+          "url": "/assets/projects/web-def-smart-school-dist/tampilan-depan.png"
         }
       ],
       "highlights": [
@@ -420,10 +420,10 @@
         "TypeScript",
         "Fullstack"
       ],
-      "thumbnail": "/assets/projects/web-def-smart-school-hub-main/tampilan depan.png",
-      "heroImage": "/assets/projects/web-def-smart-school-hub-main/tampilan depan.png",
+      "thumbnail": "/assets/projects/web-def-smart-school-hub-main/tampilan-depan.png",
+      "heroImage": "/assets/projects/web-def-smart-school-hub-main/tampilan-depan.png",
       "gallery": [
-        "/assets/projects/web-def-smart-school-hub-main/tampilan depan.png"
+        "/assets/projects/web-def-smart-school-hub-main/tampilan-depan.png"
       ],
       "previewPdf": "/assets/projects/web-def-smart-school-hub-main/smart-school.pdf",
       "folderPath": "Web_def\\smart-school-hub-main",
@@ -436,7 +436,7 @@
         {
           "name": "tampilan depan.png",
           "type": "image",
-          "url": "/assets/projects/web-def-smart-school-hub-main/tampilan depan.png"
+          "url": "/assets/projects/web-def-smart-school-hub-main/tampilan-depan.png"
         }
       ],
       "highlights": [
@@ -484,5 +484,5 @@
       "category": "Microsoft ElevAIte AI"
     }
   ],
-  "scannedAt": "2026-05-17T04:00:10.942Z"
+  "scannedAt": "2026-05-17T04:35:10.177Z"
 }
